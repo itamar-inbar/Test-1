@@ -20,21 +20,24 @@ body {
     gap: 24px;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .card {
-    background-color: #987d0e;
-    border-radius: 12px;
-    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f1ed;
+    border-radius: 4px;
+    padding: 16px;
     width: 320px;
     flex-shrink: 0;
+    color: #0d0d0d;
 }
 
 .card-title {
     font-size: 32px;
-    font-weight: 600;
-    color: #333;
+    font-weight: 400;
+    color: #0d0d0d;
     margin-bottom: 8px;
 }
 
@@ -42,6 +45,15 @@ body {
     font-size: 20px;
     color: #666;
     margin-bottom: 24px;
+}
+
+.card-price-amount {
+    opacity: 0.6;
+}
+
+.card-price-period {
+    font-size: 12px;
+    opacity: 0.6;
 }
 
 .card-content {
@@ -52,6 +64,7 @@ body {
     font-size: 16px;
     color: #333;
     margin-bottom: 16px;
+    opacity: 0.6;
 }
 
 .features-list {
@@ -76,6 +89,7 @@ body {
 
 .download-button {
     width: fit-content;
+    margin-top: auto;
     background-color: #e6e5e0;
     border: none;
     border-radius: 999px;
